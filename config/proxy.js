@@ -9,7 +9,8 @@
 export default {
   dev: {
     '/api/': {
-      target: 'http://192.168.43.100:5000',
+      // target: 'http://192.168.43.100:5000',
+      target: 'http://localhost:5000',
       // target: 'http://localhost:8080',
       // target: 'http://123.60.215.79:8000',
       changeOrigin: true,

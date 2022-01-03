@@ -50,7 +50,7 @@ const UserLayout = (props) => {
             <div className={styles.desc}>
               <FormattedMessage
                 id="pages.layouts.userLayout.title"
-                defaultMessage="Toolman: Make Aircon Great Again"
+                defaultMessage="Toolman: Make Toolman Great Again"
               />
             </div>
           </div>

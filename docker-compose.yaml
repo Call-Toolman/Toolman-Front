@@ -3,7 +3,7 @@ services:
   maga-program:
     restart: always
     image: docker.io/zebgou/maga-front
-    container_name: maga-air
+    container_name: toolman
     ports:
       - 80:80 # 设置端口 "8080(主机端口):80(容器端口)"  为了做http反代，两个容器得在一个网络下
 # docker-compose up -d # 创建容器

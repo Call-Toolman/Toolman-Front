@@ -125,12 +125,12 @@ export const Cards = (props) => {
 
       // 过滤
       json.callupinfo.forEach((callup) => {
-        console.log(callup.city.slice(0, props.city.length));
+        let callup_city_array = callup.city.split("-")
         if (
           (props.specificType == 0 || props.specificType == callup.type) &&
           (props.requestStatus == 0 || props.requestStatus == callup.state) &&
           (props.city.length == 0 ||
-            arrayEquals(props.city, callup.city.slice(0, props.city.length))) &&
+            arrayEquals(props.city, callup_city_array.slice(0, props.city.length))) &&
           callup.name.search(props.searchKey) != -1
         )
           tempCallupList.push(callup);
@@ -191,13 +191,16 @@ export const Cards = (props) => {
         accept = accept + 1;
       }
     }
+
     setRequests(callup.requests);
     let tempResponses = [];
+
     callup.requests.forEach((response) => {
       if (response.state == 1) {
         tempResponses.push(response);
       }
     });
+
     setRealRequests(tempResponses);
 
     setDetail({ ...callup, acceptReq: accept });

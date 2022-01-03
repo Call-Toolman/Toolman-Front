@@ -1,6 +1,6 @@
 export default {
   'pages.layouts.userLayout.title':
-    'Toolman: Make Aircon Great Again',
+    'Toolman: Make Toolman Great Again',
   'pages.login.accountLogin.tab': 'Account Login',
   'pages.login.accountLogin.errorMessage': 'Incorrect username/password（admin/ant.design)',
   'pages.login.username.placeholder': 'Username: admin or user',

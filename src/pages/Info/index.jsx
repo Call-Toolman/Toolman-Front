@@ -187,7 +187,7 @@ class Info extends React.Component {
                 <Row>
                   <FormattedMessage
                     id="pages.layouts.userLayout.title"
-                    defaultMessage="Toolman: Make Aircon Great Again"
+                    defaultMessage="Toolman: Make Toolman Great Again"
                   />
                 </Row>
               </ProCard>
